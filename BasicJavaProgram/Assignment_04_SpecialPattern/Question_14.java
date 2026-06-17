@@ -1,0 +1,22 @@
+package Assignment_04_SpecialPattern;
+import java.util.Scanner;
+public class Question_14 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number: ");
+        int n = sc.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n-i;j++){
+                System.out.print(" "+" ");
+            }
+            for(int j=i-1;j>=1;j--){
+                System.out.print((char)(j+65)+" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print((char)(j+64)+" ");
+            }
+            System.out.println();
+        }
+    }
+
+}
